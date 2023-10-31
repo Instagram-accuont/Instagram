@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .border {
+            width: 270px;
+            background: white;
+            margin: auto;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .lang {
+            border: transparent;
+            background: white;
+            font-size: 12px;
+            margin-top: 10px;
+            color: #737373;
+        }
+
+        .insta {
+            width: 75%;
+            margin: 33px 0 33px 0;
+            filter: invert();
+        }
+
+        .facebook {
+            background-color: #159dff;
+            color: white;
+            font-weight: bold;
+            border: transparent;
+        }
+
+        .fblogo {
+            height: 17px;
+            position: relative;
+            top: 2px;
+            right: 6px;
+        }
+
+        .recta {
+            height: 35px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .horizon {
+            width: 100%;
+            color: gray;
+            margin: 25px 0 25px 0;
+            position: relative;
+            top: 7px;
+        }
+
+        .or {
+            position: relative;
+            bottom: 27px;
+            background: white;
+            width: 50px;
+            margin: auto;
+            font-size: 13px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #737373;
+        }
+
+        input {
+            margin-bottom: 10px;
+            border: solid 1px gray;
+        }
+
+        .forgotten {
+            font-size: 14px;
+            font-weight: bold;
+            font-family: sans-serif;
+            display: inline-block;
+            margin-left: 92px;
+            color: rgb(7, 127, 255);
+            text-decoration: none;
+        }
+
+        .login {
+            background: rgb(57, 151, 223);
+            margin-top: 25px;
+            color: white;
+            margin-bottom: 25px;
+            border: transparent;
+
+        }
+
+        .dont {
+            color: #737373;
+            font-size: 14px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .signup {
+            text-decoration: none;
+            color: #0095f6;
+        }
+
+        
+        
+        .meta {
+            width: 40px;
+            position: absolute;
+            bottom: 10px;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border">
+        <select name="lang" class="lang">
+            <option value="en">Eng (UK)</option>
+            <option value="hi">Hindi</option>
+
+        </select>
+        <img class="insta" src="Image/instatext.jpeg" alt="Instagram"></img><br>
+        <button class="facebook recta"><img class="fblogo" src="/Image/facebook.png" alt=""> Continue using
+            Facebook</button>
+        <hr class="horizon">
+        <div class="or">OR</div>
+        <input class="recta" type="text" placeholder="Phone Number, username or email address"><br>
+        <input class="recta" type="password" placeholder="Password"><br>
+        <div><a href="#" class="forgotten">Forgotten your password?</a></div><br>
+        <button class="recta login">Log in</button>
+        <p class="dont">Don't have an account?<a href="#" class="signup">Sign up</a></p>
+        <div class="empty"></div>
+        <img src="Image/meta_svg.svg" class="meta">
+    </div>
+</body>
+
+</html>
